@@ -1,22 +1,94 @@
+a {
+    color: #113542;
+    text-decoration: none;
+}
+
+a.article-title:hover {
+    color: #428bca;
+    text-decoration: none;
+}
+
 .align-items-center {
     align-items: center!important;
 }
 
-.justify-content-end {
-    justify-content: flex-end!important;
+.article-content {
+    white-space: pre-line;
 }
 
-.d-flex {
-    display: flex!important;
+.article-title {
+    color: #444444;
+}
+
+.article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    /* border-bottom: 1px solid #e3e3e3; */
+}
+
+.article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.bg-steel {
+    background-color: #5f788a;
+}
+ 
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+    animation: swing 2s infinite;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #97c1cb;
+    border-color: #bfcac5;
+}
+
+#content-wrap {
+    padding-bottom: 6rem;
 }
 
 .col-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
 }
+.col-2 {
+    flex: 0 0 auto;
+    width: 50%;
+}
 
-.link-secondary {
-    color: #4F6168;
+.content-container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    background: #fdfdfd15;
+    padding: 7px 19px;
+    border: 1px solid #dddddd70;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #f1f9fb;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.content-section-auth {
+    color: #113542;
+    background: #d2bbf615;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -27,85 +99,26 @@
     margin-left: auto;
 }
 
-.blog-header-logo {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
-    font-size: 2.25rem;
-    animation: swing 2s infinite;
-}
-
-.text-dark {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity))!important;
-}
-
-.nav-scrolled {
-    /* position: relative; */
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
-}
-
-.py-1 {
-    padding-top: 0.25rem!important;
-    padding-bottom: 0.25rem!important;
-}
-
-.mb-2 {
-    margin-bottom: 0.5rem!important;
-}
-
 div {
     display: block;
 }
-.media {
-    color: #113542;
-    background: #c183fc15 ;
+
+.d-flex {
+    display: flex!important;
 }
 
-.content-section {
-    /* position: relative; */
-    padding: 1rem 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
 }
 
-a {
-    color: #113542;
-    text-decoration: none;
-}
-
-body {
-    background: rgb(185,229,246);
-    background: linear-gradient(0deg, 
-    rgba(185,229,246,1) 0%, 
-    rgba(185,220,245,1) 0%, 
-    rgba(255,255,255,1) 100%);
-}
-#underlined {
-    border-bottom: 1.7px solid grey;
-    padding-bottom: 2%;
-}
-
-header {
-    margin-bottom: 5%;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-
-footer 
-{
+footer {
     padding-top: 2%;
 }
 
-.btn-success 
-{
-    color: #fff;
-    background-color: #97c1cb;
-    border-color: #bfcac5;
-}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 
-{
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-weight: 500;
@@ -116,32 +129,27 @@ footer
     text-overflow: ellipsis;
 }
 
-img 
-{
-    display: block;
-    margin: auto;
-    width: 50%;
+header {
+    margin-bottom: 5%;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
-p 
-{
-    margin-bottom: +10px !important;
+.justify-content-end {
+    justify-content: flex-end!important;
 }
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
+.link-secondary {
+    color: #4F6168;
 }
 
-#content-wrap {
-    padding-bottom: 6rem;
+.mb-2 {
+    margin-bottom: 0.5rem!important;
 }
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 6rem;
+.media {
+    color: #113542;
+    background: #fdfdfd70 ;
 }
 
 .navbar-nav {
@@ -157,6 +165,19 @@ p
     list-style: none;
 }
 
+.navbar-nav-left {
+    text-align: left;
+    color: #113542;
+    text-decoration-color: #113542;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 1rem;
+    margin-bottom: 0;
+    line-height: 0.5rem;
+    list-style: none;
+}
+
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
@@ -165,6 +186,80 @@ p
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
+.nav-scrolled {
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+p {
+    margin-bottom: +10px !important;
+}
+
+.profile-heading {
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.profile-img {
+    height: 130px;
+    width: 130px;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.profile-media {
+    color: #113542;
+}
+
+.py-1 {
+    padding-top: 0.25rem!important;
+    padding-bottom: 0.25rem!important;
+}
+
+.req {
+    color: rgb(99, 36, 13);
+}
+
+.rounded-circle {
+    border-radius: 100%!important;
+}
+
 title {
     color: #246177;
+}
+
+.text-dark {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity))!important;
+}
+
+.text-secondary {
+    text-align: right;
+}
+
+#underlined {
+    border-bottom: 1.7px solid grey;
+    padding-bottom: 2%;
+}
+
+.wrapper {
+    width:100%;
+    height: 100%;
+    background: linear-gradient(150deg,#ffffff, #b7f2f447, #b1d1f8, #92b8fb30, #ffffff);
+    background-size: 600% 400%;
+    animation: gradient 90s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
 }
